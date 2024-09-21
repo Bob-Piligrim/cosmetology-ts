@@ -221,3 +221,64 @@ html {
 }
 
 /* headers end */
+
+/* styles for footer.tsx */
+
+/* footer */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #Footer_sites {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+}
+
+/* tooltip */
+
+#toolt {
+  display: flex;
+  flex-direction: row;
+}
+
+.ttip img {
+  max-width: 18px;
+  max-height: 18px;
+  background-color: inherit;
+}
+
+.ttip {
+  margin-right: 30px;
+  position: relative;
+}
+
+.ttip .tooltiptext {
+  visibility: hidden;
+  position: absolute;
+  bottom: 100%;
+  width: 12vw;
+  color: white;
+  font-size: 1.3vw;
+  background-color: rgb(43, 128, 105);
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+  transform: translateX(-50%);
+}
+.ttip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* headers end */
+
+/* styles for footer.tsx */
+
+/* footer */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #Footer_sites {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+}
