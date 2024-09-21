@@ -126,7 +126,7 @@ export default class Header extends React.Component {
                     className="d-none d-sm-none d-md-flex d-lg-none col-md-2 bg-succes"
                     id="toolt"
                   >
-                    <div className="ttip">
+                    <div className="ttip" style={{height: "auto"}}>
                       <img className="" src={mobile} alt="mobile" />
                       <span className="tooltiptext">+7 (906) 115-85-78</span>
                     </div>
