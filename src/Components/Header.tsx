@@ -13,6 +13,7 @@ import About from "../Pages/About";
 import Services from "../Pages/Services";
 import { Botulinoterapia } from "../Pages/Services_pages/botulinoterapia";
 import ERROR_404 from "../Pages/Error_404";
+import Price from "../Pages/Price";
 /* import Home from "../Pages/Home";
 import About from "../Pages/About";
 import Services from "../Pages/Services";
@@ -156,6 +157,7 @@ export default class Header extends React.Component {
               element={<Botulinoterapia />}
             />
             <Route path="/error_404" element={<ERROR_404 />} />
+            <Route path="/price" element={<Price />} />
             {/* <Route exact path="/reviews" element={<Reviews />} />
             <Route exact path="/price" element={<Price />} />
             <Route exact path="/questions" element={<Questions />} />
