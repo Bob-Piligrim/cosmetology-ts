@@ -1,5 +1,5 @@
 import React from "react";
-/* import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; */
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 /* assets */
 import logoHeader from "../Assets/ForHeader/Desctop/logoHeader.png";
@@ -8,6 +8,7 @@ import date from "../Assets/ForHeader/Desctop/iconDate.png";
 /* assets */
 
 /* routes */
+import Home from "../Pages/Home";
 /* import Home from "../Pages/Home";
 import About from "../Pages/About";
 import Services from "../Pages/Services";
@@ -141,10 +142,10 @@ export default class Header extends React.Component {
           </nav>
         </header>
 
-        {/* <Router>
+        <Router>
           <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route exact path="/about me" element={<About />} />
+            <Route path="/" element={<Home />} />
+            {/* <Route exact path="/about me" element={<About />} />
             <Route exact path="/services" element={<Services />} />
             <Route exact path="/reviews" element={<Reviews />} />
             <Route exact path="/price" element={<Price />} />
@@ -154,9 +155,9 @@ export default class Header extends React.Component {
               path="/services/botulinoterapia"
               element={<Botulter />}
             />
-            <Route exact path="/error_404" element={<ERROR_404 />} />
+            <Route exact path="/error_404" element={<ERROR_404 />} /> */}
           </Routes>
-        </Router> */}
+        </Router>
       </>
     );
   }
