@@ -14,6 +14,7 @@ import Services from "../Pages/Services";
 import { Botulinoterapia } from "../Pages/Services_pages/botulinoterapia";
 import ERROR_404 from "../Pages/Error_404";
 import Price from "../Pages/Price";
+import QUESTION_MODAL from "./Question_Modal/Question_Modal";
 /* import Home from "../Pages/Home";
 import About from "../Pages/About";
 import Services from "../Pages/Services";
@@ -113,7 +114,7 @@ export default class Header extends React.Component {
                         >
                           Вопросы
                         </a>
-                        {/* <QuestionsPopUp /> */}
+                        <QUESTION_MODAL />
                       </li>
                     </ul>
                   </div>
