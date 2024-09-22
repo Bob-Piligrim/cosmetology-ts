@@ -9,8 +9,10 @@ import date from "../Assets/ForHeader/Desctop/iconDate.png";
 
 /* routes */
 import Home from "../Pages/Home";
-import About from "../Pages/About"
-
+import About from "../Pages/About";
+import Services from "../Pages/Services";
+import { Botulinoterapia } from "../Pages/Services_pages/botulinoterapia";
+import ERROR_404 from "../Pages/Error_404";
 /* import Home from "../Pages/Home";
 import About from "../Pages/About";
 import Services from "../Pages/Services";
@@ -129,7 +131,7 @@ export default class Header extends React.Component {
                     className="d-none d-sm-none d-md-flex d-lg-none col-md-2 bg-succes"
                     id="toolt"
                   >
-                    <div className="ttip" style={{height: "auto"}}>
+                    <div className="ttip" style={{ height: "auto" }}>
                       <img className="" src={mobile} alt="mobile" />
                       <span className="tooltiptext">+7 (906) 115-85-78</span>
                     </div>
@@ -148,14 +150,19 @@ export default class Header extends React.Component {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about me" element={<About />} />
-            {/* <Route exact path="/services" element={<Services />} />
-            <Route exact path="/reviews" element={<Reviews />} />
+            <Route path="/services" element={<Services />} />
+            <Route
+              path="/services/botulinoterapia"
+              element={<Botulinoterapia />}
+            />
+            <Route path="/error_404" element={<ERROR_404 />} />
+            {/* <Route exact path="/reviews" element={<Reviews />} />
             <Route exact path="/price" element={<Price />} />
             <Route exact path="/questions" element={<Questions />} />
             <Route
               exact
               path="/services/botulinoterapia"
-              element={<Botulter />}
+              element={<Botulinoterapia />}
             />
             <Route exact path="/error_404" element={<ERROR_404 />} /> */}
           </Routes>
