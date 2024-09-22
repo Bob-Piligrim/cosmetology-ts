@@ -231,5 +231,379 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
 }
+
+/* styles for Home.tsx */
+
+/* home */
+
+.problem-img {
+  width: calc(100%);
+  height: calc(100% - 10px);
 }
+
+#Home-svg {
+  margin-top: 0.8%;
+  padding-left: 32px;
+}
+
+#Home-svg:last-child {
+  margin-bottom: 3%;
+}
+
+#osobcont {
+  margin: 0 -28px 0 -28px;
+  width: inherit;
+  background-color: #ffebca;
+}
+
+#div-img {
+  height: 32vw;
+}
+
+/* summary desctop */
+
+.Home_details {
+  color: #602b1d;
+  font-size: 2.2rem;
+}
+
+.Home_summary-text1,
+.Home_summary-text2 {
+  margin: 0.8% 2%;
+}
+
+.Home_answer {
+  padding: 0 2.2%;
+}
+
+.Home_answer-text {
+  font-size: 1.3rem;
+  line-height: 1;
+  padding: 1%;
+}
+
+.Home_details {
+  display: inline-flex;
+  width: inherit;
+  height: inherit;
+  overflow: hidden;
+}
+
+.Home_details::-webkit-details-marker {
+  display: none;
+}
+.Home_details::-moz-list-bullet {
+  list-style-type: none;
+}
+.Home_details::marker {
+  display: none;
+}
+.Home_summary {
+  display: block;
+  padding: 0.3em 1em 0.3em 0.9em;
+  cursor: pointer;
+  position: relative;
+}
+
+.Home_details[open] > .Home_summary:before {
+  transform: scale(1, -1);
+}
+.Home_summary ~ * {
+  padding: 0 1em 10px 0.9em;
+}
+.Home_details[open] .Home_summary ~ * {
+  animation: sweep 0.5s ease-in-out;
+}
+@keyframes sweep {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* summary mobile */
+
+.Homemob_details {
+  color: #602b1d;
+  font-size: 1rem;
+  max-width: 88%;
+  margin-left: 5%;
+  display: block;
+  overflow: hidden;
+  border: 1px solid #602b1d;
+  border-radius: 10px;
+}
+
+.Homemob_summary {
+  display: block;
+  padding: 0.3em 1em 0.3em 0.9em;
+  cursor: pointer;
+  position: relative;
+}
+.Homemob_summary-text1,
+.Homemob_summary-text2 {
+  margin: 4% auto;
+}
+
+.Homemob_summary:before {
+  top: 1em;
+  right: 0.3em;
+  color: transparent;
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTYuNTkgOC41OUwxMiAxMy4xNyA3LjQxIDguNTkgNiAxMGw2IDYgNi02eiIvPjxwYXRoIGQ9Ik0wIDBoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz48L3N2Zz4=")
+    no-repeat 50% 50% / 1em 1em;
+  width: 1em;
+  height: 1em;
+  content: "";
+  position: absolute;
+  transition: transform 0.5s;
+}
+
+.Homemob_answer {
+  padding: 0 2.2%;
+}
+
+.Homemob_answer {
+  position: relative;
+  border: none;
+  border: 1px solid #f8c77a;
+  background-color: #f8c77a;
+  bottom: -18vw;
+}
+
+.Homemob_answer-text {
+  font-size: 1rem;
+  line-height: 1;
+  padding: 1%;
+}
+
+.Homemob_details::-webkit-details-marker {
+  display: none;
+}
+.Homemob_details::-moz-list-bullet {
+  list-style-type: none;
+}
+.Homemob_details::marker {
+  display: none;
+}
+
+.Homemob_details[open] > .Homemob_summary:before {
+  transform: scale(1, -1);
+}
+.Homemob_summary ~ * {
+  padding: 0 1em 10px 0.9em;
+}
+.Homemob_details[open] .Homemob_summary ~ * {
+  animation: sweep 0.5s ease-in-out;
+}
+@keyframes sweep {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* summary */
+
+/* ReviewsCarusel */
+#Homerev_title {
+  color: #602b1d;
+  font-size: 4rem;
+}
+
+.Homerev_kovleft {
+  height: calc(20%);
+  position: absolute;
+  left: 16%;
+  top: -8%;
+  z-index: 5;
+}
+
+.Homerev_kovright {
+  height: calc(20%);
+  position: absolute;
+  left: 75%;
+  bottom: -2%;
+  z-index: 5;
+}
+
+#Homerev_cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+#Homerev_border-left {
+  background: linear-gradient(270deg, #2b8069 -13%, #b8c3bf 70%, #dddedd 113%);
+  border: none;
+  min-height: 30vw;
+  margin-right: 1%;
+}
+
+#Homerev_border {
+  background-color: #2b8069;
+  border: 0.5px solid #2b8069;
+  border-radius: 13px;
+  width: 70%;
+  min-height: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#Homerev_border-right {
+  background: linear-gradient(45deg, #2b8069 -13%, #b8c3bf 70%, #dddedd 113%);
+  min-height: 30vw;
+  margin-left: 1%;
+}
+
+#Homerev_text {
+  text-align: center;
+  width: 36vw;
+  font-size: 1.3vw;
+  color: #fff4e3;
+  margin-bottom: 5%;
+}
+
+#Homerev_img-border {
+  border: 0.5px dashed #f8c77a;
+  border-radius: 3%;
+  width: 332px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#Homerev_name,
+#Homerev_date {
+  font-size: 1.1vw;
+  color: #fff4e3;
+}
+
+#Homerev_name {
+  margin-bottom: 9px;
+}
+
+#Homerev_left {
+  margin-left: 13%;
+}
+
+#Homerev_right {
+  margin-right: 13%;
+}
+
+@media (min-width: 300px) and (max-width: 670px) {
+  #Homerev_title {
+    font-size: 1.4rem;
+  }
+
+  .Homerev_kovleft {
+    height: calc(20%);
+    position: absolute;
+    left: 5%;
+    top: -8%;
+    z-index: 5;
+  }
+
+  .Homerev_kovright {
+    height: calc(20%);
+    position: absolute;
+    left: 75%;
+    bottom: 12%;
+    z-index: 5;
+  }
+
+  #Homerev_cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  #Homerev_border {
+    background-color: #2b8069;
+    border: 0.5px solid #2b8069;
+    border-radius: 13px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #Homerev_text {
+    text-align: center;
+    width: 36vw;
+    font-size: 2vw;
+    color: #fff4e3;
+    order: 2;
+  }
+
+  #Homerev_img-border {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0.5px dashed #f8c77a;
+    border-radius: 3%;
+    width: 170px;
+    height: 55px;
+  }
+
+  #Homerev_img img {
+    width: 39px;
+    height: 39px;
+  }
+
+  #Homerev_name,
+  #Homerev_date {
+    font-size: 2vw;
+    color: #fff4e3;
+  }
+
+  #Homerev_name {
+    margin-bottom: 9px;
+  }
+
+  #Homerev_left img,
+  #Homerev_right img {
+    height: 4.3vw;
+  }
+}
+
+/* ReviewsCarusel--END*/
+
+/* Map */
+
+#Map-container {
+  margin: 4% auto;
+}
+
+.homeMap {
+  height: inherit;
+  width: inherit;
+}
+
+@media (min-width: 798px) {
+  #maps {
+    width: 40rem;
+    height: 28rem;
+  }
+}
+@media (max-width: 797px) {
+  #maps {
+    padding: 3px;
+    width: 19rem;
+    height: 15.5rem;
+  }
+}
+
+/* Map */
