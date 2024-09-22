@@ -618,3 +618,9 @@ html {
 .line-img {
   width: calc(100% - 10px);
 }
+
+/* styles for botulinoterapia.tsx */
+
+.price:after {
+  content: " \20BD";
+}
