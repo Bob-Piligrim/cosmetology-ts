@@ -24,9 +24,10 @@ import telegramMob from "../Assets/ForHome/Mobile/telegramMob.png";
 import instagramMob from "../Assets/ForHome/Mobile/instagramMob.png";
 import whatsappMob from "../Assets/ForHome/Mobile/whatsappMob.png";
 
+/* add MODULES */
 
-/* import ConsultationPopUp from "../Components/ConsultationPopUp/ConsultationPopUp"
-import ConsultationPopUpMob from "../Components/ConsultationPopUpMob/ConsultationPopUpMob" */
+import CONSULTATION_MODAL from "../Components/Consultation_Modal/Consultation_Modal-desctop/Consultation_Modal";
+import CONSULTATION_MODAL_MOBILE from "../Components/Consultation_Modal/Consultation_Modal-mobile/Consultation_Modal-mobile";
 
 export default class About extends Component {
   render() {
@@ -521,7 +522,7 @@ export default class About extends Component {
                         Записаться на консультацию
                       </button>
                     </div>
-                    {/* <ConsultationPopUp /> */}
+                    <CONSULTATION_MODAL />
                   </div>
                 </div>
               </div>
@@ -573,7 +574,7 @@ export default class About extends Component {
                     Записаться на консультацию
                   </button>
                 </div>
-                {/* <ConsultationPopUpMob/> */}
+                <CONSULTATION_MODAL_MOBILE/>
               </div>
             </div>
           </div>
