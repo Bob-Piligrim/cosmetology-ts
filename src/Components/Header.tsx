@@ -9,6 +9,8 @@ import date from "../Assets/ForHeader/Desctop/iconDate.png";
 
 /* routes */
 import Home from "../Pages/Home";
+import About from "../Pages/About"
+
 /* import Home from "../Pages/Home";
 import About from "../Pages/About";
 import Services from "../Pages/Services";
@@ -145,8 +147,8 @@ export default class Header extends React.Component {
         <Router>
           <Routes>
             <Route path="/" element={<Home />} />
-            {/* <Route exact path="/about me" element={<About />} />
-            <Route exact path="/services" element={<Services />} />
+            <Route path="/about me" element={<About />} />
+            {/* <Route exact path="/services" element={<Services />} />
             <Route exact path="/reviews" element={<Reviews />} />
             <Route exact path="/price" element={<Price />} />
             <Route exact path="/questions" element={<Questions />} />
