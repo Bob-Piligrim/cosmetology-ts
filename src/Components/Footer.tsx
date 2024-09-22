@@ -115,7 +115,7 @@ export default class Footer extends Component {
                   </div>
                   <div className="col-md-12 col-lg-4">
                     <div id="Footer_sites">
-                      <h4> Мы в соц. сетях</h4>
+                      <h4 style={{fontSize:"1.35vw"}} > Мы в соц. сетях</h4>
                       <div id="Footer_sites-img">
                         <a className="me-1" href="https://vk.com/id88404927">
                           <img className="img-fluid" src={footerVK} alt="VK" />
