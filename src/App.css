@@ -607,3 +607,14 @@ html {
 }
 
 /* Map */
+
+/* styles fot About.tsx */
+
+#problem-btn {
+  width: calc(100% - 1px);
+  height: 6 + "vw";
+}
+
+.line-img {
+  width: calc(100% - 10px);
+}
