@@ -1,0 +1,92 @@
+#Rec_media-dialog {
+  min-width: 90%;
+  width: calc(90%);
+  height: calc(100%);
+}
+
+#Rec_media-content {
+  background-color: #ffebca;
+  width: calc(100%-10px);
+  height: auto;
+}
+
+#Rec_media-row {
+  margin-top: 1%;
+}
+
+#Rec_media-img {
+  padding-right: 2;
+  width: 50%;
+}
+
+.Rec_img {
+  width: calc(100%);
+  height: 34vw;
+}
+
+#Rec_media-col {
+  padding-left: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+#Rec_media-input {
+  height: 5.3vw;
+  margin-top: 0.4%;
+}
+
+#Rec_media-input:first-child {
+  margin-top: 0;
+}
+
+#Rec_media-input input {
+  padding: 0;
+  margin: 0;
+  color: #602b1d;
+  font-size: 1.9vw;
+}
+
+#Rec_media-input svg line,
+svg line {
+  stroke: #602b1d;
+  stroke-width: 0.3px;
+  stroke-dashoffset: 1px;
+  stroke-dasharray: 2px;
+}
+
+#Rec_media-select {
+  color: #602b1d;
+  font-size: 1.9vw;
+  padding-left: 3px;
+}
+
+#Rec_media-span {
+  margin-top: 1%;
+  color: #602b1d;
+  line-height: 1;
+  padding-left: 5px;
+  height: 2vw;
+}
+
+#Rec_media-span div {
+  color: #602b1d;
+  font-size: 1.6vw;
+}
+
+#Rec_media-form {
+  margin-top: 5%;
+  padding-top: 1.3vw;
+}
+
+#Rec_media-button {
+  width: 50vw;
+  height: 5vw;
+  border: 1px;
+  border-style: dashed;
+  border-color: #602b1d;
+  background-color: #f8c77a;
+  border-radius: 13px;
+  font-size: 1.5vw;
+}

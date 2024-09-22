@@ -39,10 +39,10 @@ import telegramMob from "../Assets/ForHome/Mobile/telegramMob.png";
 import instagramMob from "../Assets/ForHome/Mobile/instagramMob.png";
 import whatsappMob from "../Assets/ForHome/Mobile/whatsappMob.png";
 
-/* modalwindow */
+/* add MODULES */
 
-/* import RegistrationProcPopUp from "../Components/RegistrationProcPopUp/RegistrationProcPopUp";
-import RegistrationProcPopUpMob from "../Components/RegistrationProcPopUpMob/RegistrationProcPopUpMob"; */
+import RECEPTION_MODAL from "../Components/Reception_Modal/Reception_Modal-desctop/Reception_Modal";
+import RECEPTION_MODAL_MOBILE from "../Components/Reception_Modal/Reception_Modal-mobile/Reception_Modal-mobile";
 
 /* yandex-map-api (в дальнейшем создать отдельный файл) */
 
@@ -153,7 +153,7 @@ export default class Home extends Component {
                                 Записаться на прием{" "}
                               </a>
                             </div>
-                            {/* <RegistrationProcPopUp /> */}
+                            <RECEPTION_MODAL />
                           </div>
                         </div>
                       </div>
@@ -268,7 +268,7 @@ export default class Home extends Component {
                           Записаться на прием{" "}
                         </a>
                       </div>
-                      {/* <RegistrationProcPopUpMob /> */}
+                      <RECEPTION_MODAL_MOBILE/>
                     </div>
                   </div>
                 </div>

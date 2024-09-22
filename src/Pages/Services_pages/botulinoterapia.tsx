@@ -8,6 +8,10 @@ import wm2 from "../Services_pages/Botulinoterapia/Desctop/wm2.png";
 
 import presentmob from "../Services_pages/Botulinoterapia/Mobile/presentmob.png";
 
+/* add MODALES */
+import RECEPTION_MODAL from "../../Components/Reception_Modal/Reception_Modal-desctop/Reception_Modal";
+import RECEPTION_MODAL_MOBILE from "../../Components/Reception_Modal/Reception_Modal-mobile/Reception_Modal-mobile";
+
 export class Botulinoterapia extends Component {
   render() {
     return (
@@ -37,7 +41,10 @@ export class Botulinoterapia extends Component {
                   borderColor: "#602B1D",
                 }}
               >
-                <div className="col-md-3 ms-5" style={{ paddingTop: 40 + "px" }}>
+                <div
+                  className="col-md-3 ms-5"
+                  style={{ paddingTop: 40 + "px" }}
+                >
                   <div
                     className="text-left"
                     style={{ color: "#602B1D", fontSize: 2 + "vw" }}
@@ -138,7 +145,10 @@ export class Botulinoterapia extends Component {
                   backgroundColor: "#2B8069",
                 }}
               >
-                <div className="col-md-3 ms-5" style={{ paddingTop: 40 + "px" }}>
+                <div
+                  className="col-md-3 ms-5"
+                  style={{ paddingTop: 40 + "px" }}
+                >
                   <div
                     className="text-left"
                     style={{ color: "#FFEBCA", fontSize: 2 + "vw" }}
@@ -216,7 +226,10 @@ export class Botulinoterapia extends Component {
                   backgroundColor: "#FFEBCA",
                 }}
               >
-                <div className="col-md-3 ms-5" style={{ paddingTop: 40 + "px" }}>
+                <div
+                  className="col-md-3 ms-5"
+                  style={{ paddingTop: 40 + "px" }}
+                >
                   <div
                     className="text-left"
                     style={{ color: "#602B1D", fontSize: 2 + "vw" }}
@@ -291,22 +304,27 @@ export class Botulinoterapia extends Component {
               style={{ paddingBottom: 40 + "px" }}
             >
               <div className="row">
-                <form className="col-md-6 d-flex align-items-center justify-content-center ps-0">
-                  <button
-                    className="btn btn-outline-dark me-1"
-                    type="submit"
+                <div className="col-md-6 d-flex align-items-center justify-content-center ps-0">
+                  <a
+                    data-bs-toggle="modal"
+                    href="#Procedure"
                     style={{
+                      color: "#602B1D",
+                      textDecoration: "none",
                       backgroundColor: "#F8C77A",
                       border: 1 + "px",
-                      borderStyle: "dashed",
+                      borderRadius: "13px",
                       borderColor: "#602B1D",
                       width: "100%",
                       height: 60 + "px",
                     }}
+                    className="text-center d-flex align-items-center justify-content-center px-3 py-3"
                   >
-                    Записаться на процедуру
-                  </button>
-                </form>
+                    {" "}
+                    Записаться на прием{" "}
+                  </a>
+                  <RECEPTION_MODAL />
+                </div>
                 <form className="col-md-6 d-flex align-items-center justify-content-center pe-0">
                   <button
                     className="btn btn-outline-dark me-1"
@@ -327,22 +345,28 @@ export class Botulinoterapia extends Component {
             {/* Мобильная версия */}
             <div className="d-md-none d-lg-none col-12 col-sm-12">
               <div className="row mt-2">
-                <form className="col-12 col-sm-12 d-flex align-items-center justify-content-center px-0">
-                  <button
-                    className="btn btn-outline-dark"
-                    type="submit"
+                <div className="col-12 col-sm-12 d-flex align-items-center justify-content-center px-0">
+                  <a
+                    data-bs-toggle="modal"
+                    href="#ProcedureMob"
+                    className="text-center d-flex align-items-center justify-content-center py-3"
                     style={{
                       backgroundColor: "#F8C77A",
-                      border: 1 + "px",
-                      borderStyle: "dashed",
-                      borderColor: "#602B1D",
+                      color: "#602B1D",
+                      textDecoration: "none",
+                      display: "inline-block",
+                      borderRadius: 13 + "px",
+                      border: "0.5px",
+                      borderStyle: "solid",
+                      borderColor: "white",
                       width: "100%",
                       height: 60 + "px",
                     }}
                   >
                     Записаться на процедуру
-                  </button>
-                </form>
+                  </a>
+                  <RECEPTION_MODAL_MOBILE />
+                </div>
                 <form className="col-12 col-sm-12 d-flex align-items-center justify-content-center mt-3 px-0">
                   <button
                     className="btn btn-outline-dark"
@@ -832,22 +856,27 @@ export class Botulinoterapia extends Component {
                 </div>
               </div>
               <div className="row">
-                <form className="col-md-6 d-flex align-items-center justify-content-center ps-0">
-                  <button
-                    className="btn btn-outline-dark me-1"
-                    type="submit"
+                <div className="col-md-6 d-flex align-items-center justify-content-center ps-0">
+                  <a
+                    data-bs-toggle="modal"
+                    href="#Procedure"
                     style={{
+                      color: "#602B1D",
+                      textDecoration: "none",
                       backgroundColor: "#F8C77A",
                       border: 1 + "px",
-                      borderStyle: "dashed",
+                      borderRadius: "13px",
                       borderColor: "#602B1D",
                       width: "100%",
                       height: 60 + "px",
                     }}
+                    className="text-center d-flex align-items-center justify-content-center px-3 py-3"
                   >
-                    Записаться на процедуру
-                  </button>
-                </form>
+                    {" "}
+                    Записаться на прием{" "}
+                  </a>
+                  <RECEPTION_MODAL />
+                </div>
                 <form className="col-md-6 d-flex align-items-center justify-content-center pe-0">
                   <button
                     className="btn btn-outline-dark me-1"
@@ -872,7 +901,11 @@ export class Botulinoterapia extends Component {
                 style={{ backgroundColor: "#2B8069" }}
               >
                 <div className="col-12 col-sm-12 text-center">
-                  <img className="img-fluid" src={presentmob} alt="presentmob" />
+                  <img
+                    className="img-fluid"
+                    src={presentmob}
+                    alt="presentmob"
+                  />
                 </div>
                 <div className="col-12 col-sm-12 text-center">
                   <div style={{ color: "#FFEBCA", fontSize: 7 + "vw" }}>
@@ -881,22 +914,28 @@ export class Botulinoterapia extends Component {
                 </div>
               </div>
               <div className="row mt-3">
-                <form className="col-12 col-sm-12 d-flex align-items-center justify-content-center px-0">
-                  <button
-                    className="btn btn-outline-dark me-1"
-                    type="submit"
+                <div className="col-12 col-sm-12 d-flex align-items-center justify-content-center px-0">
+                  <a
+                    data-bs-toggle="modal"
+                    href="#ProcedureMob"
+                    className="text-center d-flex align-items-center justify-content-center py-3"
                     style={{
                       backgroundColor: "#F8C77A",
-                      border: 1 + "px",
-                      borderStyle: "dashed",
-                      borderColor: "#602B1D",
+                      color: "#602B1D",
+                      textDecoration: "none",
+                      display: "inline-block",
+                      borderRadius: 13 + "px",
+                      border: "0.5px",
+                      borderStyle: "solid",
+                      borderColor: "white",
                       width: "100%",
                       height: 60 + "px",
                     }}
                   >
                     Записаться на процедуру
-                  </button>
-                </form>
+                  </a>
+                  <RECEPTION_MODAL_MOBILE />
+                </div>
                 <form className="col-12 col-sm-12 d-flex align-items-center justify-content-center px-0 mt-3">
                   <button
                     className="btn btn-outline-dark me-1"
