@@ -27,6 +27,8 @@ import QuestionsPopUp from "./QuestionsPopUp/QuestionsPopUp";
 import ERROR_404 from "../Pages/Error_404"; */
 /* routes */
 
+import REVIEWS_MODAL from "./Reviews_Modal/Reviews_Modal";
+
 export default class Header extends React.Component {
   render() {
     return (
@@ -95,7 +97,7 @@ export default class Header extends React.Component {
                         >
                           Отзывы
                         </a>
-                        {/* <ReviewsPopUp /> */}
+                        <REVIEWS_MODAL />
                       </li>
                       <li className="nav-item">
                         <a
