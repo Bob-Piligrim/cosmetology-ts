@@ -330,27 +330,32 @@ html {
 .Homemob_details {
   color: #602b1d;
   font-size: 1rem;
-  max-width: 88%;
+  max-width: 100%;
   margin-left: 5%;
   display: block;
   overflow: hidden;
-  border: 1px solid #602b1d;
-  border-radius: 10px;
 }
 
 .Homemob_summary {
   display: block;
-  padding: 0.3em 1em 0.3em 0.9em;
   cursor: pointer;
   position: relative;
+  border: 0.5px solid #602b1d;
+  border-radius: 13px;
+  height: 3em;
+  margin-bottom: 1em;
 }
-.Homemob_summary-text1,
+
+.Homemob_summary-text1 {
+  margin: 0.6em 0.9em 0 1em;
+}
+
 .Homemob_summary-text2 {
-  margin: 4% auto;
+  margin-top: 0.6em;
 }
 
 .Homemob_summary:before {
-  top: 1em;
+  top: 0.8em;
   right: 0.3em;
   color: transparent;
   background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTYuNTkgOC41OUwxMiAxMy4xNyA3LjQxIDguNTkgNiAxMGw2IDYgNi02eiIvPjxwYXRoIGQ9Ik0wIDBoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz48L3N2Zz4=")
@@ -363,21 +368,19 @@ html {
 }
 
 .Homemob_answer {
-  padding: 0 2.2%;
-}
-
-.Homemob_answer {
   position: relative;
   border: none;
   border: 1px solid #f8c77a;
   background-color: #f8c77a;
-  bottom: -18vw;
+  border-radius: 13px;
+  bottom: -0.1em;
+  margin-bottom: 1em;
 }
 
 .Homemob_answer-text {
-  font-size: 1rem;
+  font-size: 1em;
   line-height: 1;
-  padding: 1%;
+  padding: 1em 1em 0.1em 0.8em;
 }
 
 .Homemob_details::-webkit-details-marker {
@@ -473,24 +476,86 @@ html {
 }
 
 #Homerev_img-border {
-  border: 0.5px dashed #f8c77a;
-  border-radius: 3%;
-  width: 332px;
-  height: 100px;
+  width: 24vw;
+  min-height: 80px;
+  height: 9vw;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
 }
 
+#Homerev_svg {
+  width: 23vw;
+  min-height: 79px;
+  height: 8vw;
+}
+
+#Homerev_rect {
+  width: 22vw;
+  min-height: 78px;
+  height: 7vw;
+  stroke: #f8c77a;
+  stroke-width: 1px;
+  stroke-dasharray: 12px 12px;
+  stroke-dashoffset: 1px;
+  fill: none;
+}
+
+#Homerev_foreignObject {
+  width: 21vw;
+  min-height: 77px;
+  height: 6vw;
+}
+
+#Homerev_reviews {
+  margin-top: 0.5vw;
+  padding: 0.1vw 0.3vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: inherit;
+}
+
+#Homerev_img {
+  margin: 1.1vw 1.3vw 1.1vw 2.5vw;
+  height: calc(90%);
+  width: calc(25%);
+}
+
+#Homerev_img > img {
+  width: calc(100%);
+  height: calc(100%);
+}
+
 #Homerev_name,
 #Homerev_date {
-  font-size: 1.1vw;
+  font-size: 1.2vw;
   color: #fff4e3;
 }
 
 #Homerev_name {
   margin-bottom: 9px;
+}
+
+#Homerev_left > img,
+#Homerev_right > img {
+  border: 0.5px solid #fff4e3;
+  border-radius: 10px;
+  width: 8.75vw;
+  height: 3.6vw;
+}
+
+#Homerev_left > img:hover {
+  border: 0.5px solid #f8c77a;
+  border-radius: 13px;
+  background-color: #f8c77a;
+}
+
+#Homerev_right > img:hover {
+  border: 0.5px solid #f8c77a;
+  border-radius: 10px;
+  background-color: #f8c77a;
 }
 
 #Homerev_left {
@@ -501,7 +566,7 @@ html {
   margin-right: 13%;
 }
 
-@media (min-width: 300px) and (max-width: 670px) {
+@media (max-width: 767px) {
   #Homerev_title {
     font-size: 1.4rem;
   }
@@ -552,10 +617,39 @@ html {
   #Homerev_img-border {
     margin-top: 10px;
     margin-bottom: 10px;
-    border: 0.5px dashed #f8c77a;
-    border-radius: 3%;
-    width: 170px;
-    height: 55px;
+    width: 37vw;
+    height: 16vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #Homerev_svg {
+    width: 36vw;
+    height: 15vw;
+  }
+
+  #Homerev_rect {
+    width: 35vw;
+    height: 14vw;
+    stroke: #ffebca;
+    stroke-width: 1px;
+    stroke-dasharray: 12px 12px;
+    stroke-dashoffset: 1px;
+    fill: none;
+  }
+
+  #Homerev_foreignObject {
+    width: 34vw;
+    height: 13vw;
+  }
+
+  #Homerev_reviews {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 6%;
   }
 
   #Homerev_img img {
@@ -571,6 +665,133 @@ html {
 
   #Homerev_name {
     margin-bottom: 9px;
+  }
+
+  #Homerev_left img,
+  #Homerev_right img {
+    height: 4.3vw;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1300px) {
+  #Homerev_title {
+    color: #602b1d;
+    font-size: 4rem;
+  }
+
+  .Homerev_kovleft {
+    height: calc(20%);
+    position: absolute;
+    left: 16%;
+    top: -8%;
+    z-index: 5;
+  }
+
+  .Homerev_kovright {
+    height: calc(20%);
+    position: absolute;
+    left: 75%;
+    bottom: -2%;
+    z-index: 5;
+  }
+
+  #Homerev_cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  #Homerev_border-left {
+    background: linear-gradient(
+      270deg,
+      #2b8069 -13%,
+      #b8c3bf 70%,
+      #dddedd 113%
+    );
+    border: none;
+    min-height: 30vw;
+    margin-right: 1%;
+  }
+
+  #Homerev_border {
+    background-color: #2b8069;
+    border: 0.5px solid #2b8069;
+    border-radius: 13px;
+    width: 70%;
+    min-height: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #Homerev_border-right {
+    background: linear-gradient(45deg, #2b8069 -13%, #b8c3bf 70%, #dddedd 113%);
+    min-height: 30vw;
+    margin-left: 1%;
+  }
+
+  #Homerev_text {
+    text-align: center;
+    width: 36vw;
+    font-size: 1.3vw;
+    color: #fff4e3;
+    margin-bottom: 5%;
+  }
+
+  #Homerev_img-border {
+    width: clamp();
+    height: 7rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  /* #Homerev_svg {
+    width: 17rem;
+    height: 3rem;
+  }
+
+  #Homerev_rect {
+    width: 16rem;
+    height: 2rem;
+    stroke: #f8c77a;
+    stroke-width: 1px;
+    stroke-dasharray: 12px 12px;
+    stroke-dashoffset: 1px;
+    fill: none;
+  }
+
+  #Homerev_foreignObject {
+    width: 15rem;
+    height: 1rem;
+  } */
+
+  #Homerev_reviews {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  #Homerev_name,
+  #Homerev_date {
+    font-size: 1.1vw;
+    color: #fff4e3;
+  }
+
+  #Homerev_name {
+    margin-bottom: 9px;
+  }
+
+  #Homerev_left {
+    margin-left: 17%;
+  }
+
+  #Homerev_right {
+    margin-right: 17%;
   }
 
   #Homerev_left img,

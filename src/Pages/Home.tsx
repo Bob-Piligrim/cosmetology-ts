@@ -51,7 +51,8 @@ import { YMaps, Map } from "@pbe/react-yandex-maps";
 
 const HomeMap = () => (
   <YMaps>
-    <Map className="homeMap"
+    <Map
+      className="homeMap"
       id="maps"
       defaultState={{ center: [55.794668133, 49.210856], zoom: 13.4 }}
     />
@@ -268,7 +269,7 @@ export default class Home extends Component {
                           Записаться на прием{" "}
                         </a>
                       </div>
-                      <RECEPTION_MODAL_MOBILE/>
+                      <RECEPTION_MODAL_MOBILE />
                     </div>
                   </div>
                 </div>
@@ -749,13 +750,11 @@ export default class Home extends Component {
                 >
                   <details className="Homemob_details">
                     <summary className="Homemob_summary">
-                      <div className="Homemob_summary-border">
-                        <div className="float-start Homemob_summary-text1">
-                          04/04
-                        </div>
-                        <div className="float-end Homemob_summary-text2">
-                          Постоянное обучение
-                        </div>
+                      <div className="float-start Homemob_summary-text1">
+                        01/04
+                      </div>
+                      <div className="float-start Homemob_summary-text2">
+                        Индивидуальный подход
                       </div>
                     </summary>
                     <div className="Homemob_answer">
@@ -776,13 +775,61 @@ export default class Home extends Component {
                 >
                   <details className="Homemob_details">
                     <summary className="Homemob_summary">
-                      <div className="Homemob_summary-border">
-                        <div className="float-start Homemob_summary-text1">
-                          04/04
-                        </div>
-                        <div className="float-end Homemob_summary-text2">
-                          Постоянное обучение
-                        </div>
+                      <div className="float-start Homemob_summary-text1">
+                        02/04
+                      </div>
+                      <div className="float-start Homemob_summary-text2">
+                        Безопасность и качество
+                      </div>
+                    </summary>
+                    <div className="Homemob_answer">
+                      <p className="Homemob_answer-text">
+                        Мы строго следим за качеством материалов и оборудования.
+                        Все продукты проходят тщательный отбор и соответствуют
+                        стандартам безопасности, что гарантирует эффективность
+                        процедур и минимизирует риск аллергий и побочных
+                        эффектов. Наша цель — безопасный и комфортный опыт с
+                        видимыми улучшениями состояния кожи.
+                      </p>
+                    </div>
+                  </details>
+                </div>
+                <div
+                  className="col-11 col-sm-11"
+                  style={{ marginLeft: "auto", marginRight: "auto" }}
+                >
+                  <details className="Homemob_details">
+                    <summary className="Homemob_summary">
+                      <div className="float-start Homemob_summary-text1">
+                        03/04
+                      </div>
+                      <div className="float-start Homemob_summary-text2">
+                        Профессионализм и опыт{" "}
+                      </div>
+                    </summary>
+                    <div className="Homemob_answer">
+                      <p className="Homemob_answer-text">
+                        Мы строго следим за качеством материалов и оборудования.
+                        Все продукты проходят тщательный отбор и соответствуют
+                        стандартам безопасности, что гарантирует эффективность
+                        процедур и минимизирует риск аллергий и побочных
+                        эффектов. Наша цель — безопасный и комфортный опыт с
+                        видимыми улучшениями состояния кожи.
+                      </p>
+                    </div>
+                  </details>
+                </div>
+                <div
+                  className="col-11 col-sm-11"
+                  style={{ marginLeft: "auto", marginRight: "auto" }}
+                >
+                  <details className="Homemob_details">
+                    <summary className="Homemob_summary">
+                      <div className="float-start Homemob_summary-text1">
+                        04/04
+                      </div>
+                      <div className="float-start Homemob_summary-text2">
+                        Постоянное обучение
                       </div>
                     </summary>
                     <div className="Homemob_answer">
@@ -1055,7 +1102,7 @@ export default class Home extends Component {
           </div>
         </div>
         {/* Шестой контейнер */}
-        <div className="container-fluid mt-5 mb-3">
+        <div className="container-fluid mt-5">
           <div className="row">
             <div className="col-md-12 justify-content-md-center p-0">
               <div style={{ marginBottom: "4%" }}>
@@ -1083,18 +1130,124 @@ export default class Home extends Component {
                     <div className="col-md-10" id="Homerev_border">
                       <div id="Homerev_text">
                         Это был мой первый опыт косметических процедур, и я
-                        полностью довольна результатами. Внимательное отношение,
-                        индивидуальный подход и, конечно, восхитительные
-                        результаты!
+                        полностью довольна результатами. Это был мой первый опыт косметических процедур, и я
+                        полностью довольна результатами. Это был мой первый опыт косметических процедур, и я
+                        полностью довольна результатами.
                       </div>
                       <div id="Homerev_img-border">
-                        <div id="Homerev_img">
-                          <img src={Ex1} className="d-block" alt="ex1" />
-                        </div>
-                        <div id="Homerev_nd">
-                          <div id="Homerev_name">Лиза Семакина</div>
-                          <div id="Homerev_date">27.12.2024</div>
-                        </div>
+                        <svg id="Homerev_svg">
+                          <rect
+                            id="Homerev_rect"
+                            x="0.5"
+                            y="1.29297"
+                            rx="11.5"
+                          />
+                          <foreignObject x="0" y="0" id="Homerev_foreignObject">
+                            <div id="Homerev_reviews">
+                              <div  className="col-6" id="Homerev_img" >
+                                <img src={Ex1} className="img-fluid" alt="ex1" />
+                              </div>
+                              <div className="col-6" id="Homerev_nd">
+                                <div id="Homerev_name">Лиза Семакина</div>
+                                <div id="Homerev_date">27.12.2024</div>
+                              </div>
+                            </div>
+                          </foreignObject>
+                        </svg>
+                      </div>
+                    </div>
+                    <div className="col-md-2" id="Homerev_border-right"></div>
+                  </div>
+                  <div className="carousel-item" id="Homerev_cont">
+                    <div className="col-md-2" id="Homerev_border-left"></div>
+                    <div className="col-md-10" id="Homerev_border">
+                      <div id="Homerev_text">
+                        Это был мой первый опыт косметических процедур, и я
+                        полностью довольна результатами. Это был мой первый опыт косметических процедур, и я
+                        полностью довольна результатами.
+                      </div>
+                      <div id="Homerev_img-border">
+                        <svg id="Homerev_svg">
+                          <rect
+                            id="Homerev_rect"
+                            x="0.5"
+                            y="1.29297"
+                            rx="11.5"
+                          />
+                          <foreignObject x="0" y="0" id="Homerev_foreignObject">
+                            <div id="Homerev_reviews">
+                              <div  className="col-6" id="Homerev_img" >
+                                <img src={Ex1} className="img-fluid" alt="ex1" />
+                              </div>
+                              <div className="col-6" id="Homerev_nd">
+                                <div id="Homerev_name">Лиза Семакина</div>
+                                <div id="Homerev_date">27.12.2024</div>
+                              </div>
+                            </div>
+                          </foreignObject>
+                        </svg>
+                      </div>
+                    </div>
+                    <div className="col-md-2" id="Homerev_border-right"></div>
+                  </div>
+                  <div className="carousel-item" id="Homerev_cont">
+                    <div className="col-md-2" id="Homerev_border-left"></div>
+                    <div className="col-md-10" id="Homerev_border">
+                      <div id="Homerev_text">
+                        Это был мой первый опыт косметических процедур, и я
+                        полностью довольна результатами.
+                      </div>
+                      <div id="Homerev_img-border">
+                        <svg id="Homerev_svg">
+                          <rect
+                            id="Homerev_rect"
+                            x="0.5"
+                            y="1.29297"
+                            rx="11.5"
+                          />
+                          <foreignObject x="0" y="0" id="Homerev_foreignObject">
+                            <div id="Homerev_reviews">
+                              <div  className="col-6" id="Homerev_img" >
+                                <img src={Ex1} className="img-fluid" alt="ex1" />
+                              </div>
+                              <div className="col-6" id="Homerev_nd">
+                                <div id="Homerev_name">Лиза Семакина</div>
+                                <div id="Homerev_date">27.12.2024</div>
+                              </div>
+                            </div>
+                          </foreignObject>
+                        </svg>
+                      </div>
+                    </div>
+                    <div className="col-md-2" id="Homerev_border-right"></div>
+                  </div>
+                  {/* <div className="carousel-item" id="Homerev_cont">
+                    <div className="col-md-2" id="Homerev_border-left"></div>
+                    <div className="col-md-10" id="Homerev_border">
+                      <div id="Homerev_text">
+                        Внимательное отношение, индивидуальный подход и,
+                        конечно, восхитительные результаты!
+                      </div>
+                      <div id="Homerev_img-border">
+                        <svg id="Homerev_svg">
+                          <rect
+                            id="Homerev_rect"
+                            x="0.5"
+                            y="1.29297"
+                            rx="11.5"
+                          />
+                          <foreignObject x="0" y="0" id="Homerev_foreignObject">
+                            <div id="Homerev_reviews">
+                              <div className="col-6" id="Homerev_img">
+                                <img src={Ex1} className="img-fluid" alt="ex1" />
+                              </div>
+                              <div className="col-6" id="Homerev_nd">
+                                <div id="Homerev_name">Лиза Семакина</div>
+                                <div id="Homerev_date">27.12.2024</div>
+                              </div>
+                            </div>
+                          </foreignObject>
+                        </svg>
                       </div>
                     </div>
                     <div className="col-md-2" id="Homerev_border-right"></div>
@@ -1106,20 +1259,32 @@ export default class Home extends Component {
                         Это был мой первый опыт косметических процедур, и я
                         полностью довольна результатами. Внимательное отношение,
                         индивидуальный подход и, конечно, восхитительные
-                        результаты! asfasfa
+                        результаты!
                       </div>
                       <div id="Homerev_img-border">
-                        <div id="Homerev_img">
-                          <img src={Ex1} className="d-block" alt="ex1" />
-                        </div>
-                        <div id="Homerev_nd">
-                          <div id="Homerev_name">Лиза Семакина</div>
-                          <div id="Homerev_date">27.12.2024</div>
-                        </div>
+                        <svg id="Homerev_svg">
+                          <rect
+                            id="Homerev_rect"
+                            x="0.5"
+                            y="1.29297"
+                            rx="11.5"
+                          />
+                          <foreignObject x="0" y="0" id="Homerev_foreignObject">
+                            <div id="Homerev_reviews">
+                              <div className="col-6" id="Homerev_img">
+                                <img src={Ex1} className="img-fluid" alt="ex1" />
+                              </div>
+                              <div className="col-6" id="Homerev_nd">
+                                <div id="Homerev_name">Лиза Семакина</div>
+                                <div id="Homerev_date">27.12.2024</div>
+                              </div>
+                            </div>
+                          </foreignObject>
+                        </svg>
                       </div>
                     </div>
                     <div className="col-md-2" id="Homerev_border-right"></div>
-                  </div>
+                  </div> */}
                 </div>
                 <a
                   className="carousel-control-prev"
@@ -1150,14 +1315,6 @@ export default class Home extends Component {
                   />
                 </a>
               </div>
-            </div>
-            <div className="d-md-none d-lg-none col-12 col-sm-12 justify-content-md-center">
-              <h1
-                className="col-md-11 text-center ffamily"
-                style={{ color: "#602B1D", fontSize: 7 + "vw" }}
-              >
-                Отзывы от пациенток
-              </h1>
             </div>
           </div>
         </div>
