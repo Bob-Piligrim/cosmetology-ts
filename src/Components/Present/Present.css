@@ -1,0 +1,169 @@
+.Present_container {
+  position: relative;
+}
+
+.Present_img {
+  cursor: pointer;
+}
+
+.present {
+  width: 100%;
+  height: 100%;
+}
+
+.Present_content {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    image-set("./Assets/Present2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 13px;
+  padding: 2.2vw 13vw;
+  animation: present 2s ease-out;
+  cursor: pointer;
+  z-index: 5;
+  height: 36vw;
+}
+
+.block1 {
+  margin-bottom: 3.6vw;
+}
+
+.block1 > h2 {
+  font-size: 4.7vw;
+  margin-bottom: 1.4vw;
+}
+
+.block1 > div {
+  font-size: 1.3vw;
+}
+
+.block2 {
+  margin-bottom: 0.8vw;
+  padding-left: 1.5vw;
+  width: 69vw;
+  height: 14vw;
+}
+
+#Present_svg {
+  width: 68vw;
+  height: 13vw;
+}
+
+#Present_rect {
+  width: 67vw;
+  height: 12vw;
+  stroke: #fff4e3;
+  stroke-width: 1px;
+  stroke-dasharray: 12px 12px;
+  stroke-dashoffset: 1px;
+  fill: none;
+}
+
+#Present_foreignObject {
+  width: 66vw;
+  height: 11vw;
+  padding: 2.2vw;
+}
+
+@keyframes present {
+  0% {
+    margin-left: 50vw;
+  }
+  100% {
+    margin-left: 0vw;
+  }
+
+  
+}
+
+@media (max-width: 780px) {
+  #container_fl {
+    padding: 0;
+  }
+  .Presentmob_container {
+    position: relative;
+    width: 100%;
+  }
+
+  .Presentmob_img {
+    cursor: pointer;
+  }
+
+  .presentmob {
+    width: 100%;
+    height: 100%;
+  }
+
+  .Presentmob_content {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      image-set("./Assets/Present2Mob.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 13px;
+    height: 77.7vw;
+    visibility: visible;
+    animation: presentmob 2s ease-out;
+    padding-top: 0.2vw;
+    height: 68.2vw;
+  }
+
+  .Mobblock1 {
+    margin-bottom: 4.4vw;
+    padding: 0 4.4vw;
+  }
+
+  .Mobblock1 > h2 {
+    font-size: 6.6vw;
+    margin-top: 6.6vw;
+    margin-bottom: 5.5vw;
+  }
+
+  .Mobblock1 > div {
+    font-size: 3.8vw;
+  }
+
+  .Mobblock2 {
+    margin-bottom: 3.6vw;
+    padding: 0 4.4vw;
+    width: 74vw;
+    height: 40vw;
+  }
+
+  .Mobblock2 h3 {
+    font-size: 4.4vw;
+  }
+
+  .Mobblock2 li {
+    font-size: 3.8vw;
+  }
+
+  #Presentmob_svg {
+    width: 73vw;
+    height: 39vw;
+  }
+
+  #Presentmob_rect {
+    width: 72vw;
+    height: 38vw;
+    stroke: #fff4e3;
+    stroke-width: 1px;
+    stroke-dasharray: 12px 12px;
+    stroke-dashoffset: 1px;
+    fill: none;
+  }
+
+  #Presentmob_foreignObject {
+    width: 71vw;
+    height: 37vw;
+    padding: 4.4vw;
+  }
+
+  @keyframes presentmob {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
