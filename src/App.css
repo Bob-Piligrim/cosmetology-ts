@@ -17,6 +17,11 @@ html {
   margin: 32px 20px 32px 20px;
 }
 
+.ffamily {
+  font-family: "Cormorant+SC";
+}
+
+
 /* styles for header.tsx */
 
 /* header */
