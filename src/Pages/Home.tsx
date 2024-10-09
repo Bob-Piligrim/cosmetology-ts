@@ -111,20 +111,7 @@ export default class Home extends Component {
                             <div className="col-md-6">
                               <a
                                 href="/services"
-                                style={{
-                                  background: "inherit",
-                                  color: "white",
-                                  textDecoration: "none",
-                                  display: "inline-block",
-                                  borderRadius: 13 + "px",
-                                  border: "0.5px",
-                                  borderStyle: "solid",
-                                  borderColor: "#FFF4E3",
-                                  fontSize: 1.2 + "vw",
-                                  height: "5vw",
-                                  width: "22vw",
-                                }}
-                                id="ahref"
+                                id="updateBG"
                                 className="text-center d-flex align-items-center justify-content-center px-3 py-3"
                               >
                                 {" "}
@@ -135,19 +122,7 @@ export default class Home extends Component {
                               <a
                                 data-bs-toggle="modal"
                                 href="#Procedure"
-                                style={{
-                                  backgroundColor: "#F8C77A",
-                                  color: "#602B1D",
-                                  textDecoration: "none",
-                                  display: "inline-block",
-                                  borderRadius: 13 + "px",
-                                  border: "0.5px",
-                                  borderColor: "#F8C77A",
-                                  borderStyle: "solid",
-                                  fontSize: 1.2 + "vw",
-                                  height: "5vw",
-                                  width: "22vw",
-                                }}
+                                id="updateBGOsob"
                                 className="text-center d-flex align-items-center justify-content-center px-3 py-3"
                               >
                                 {" "}
@@ -161,20 +136,29 @@ export default class Home extends Component {
                     </div>
                     <div
                       className="col-6 mt-1"
+                      id="Home_woman1"
                       style={{ paddingLeft: 0, paddingRight: 9 }}
                     >
                       <img className="problem-img" src={woman1} alt="woman1" />
+                      <div className="ffamily" id="Home_hiddenWoman1-text">
+                        Липолитики
+                      </div>
                     </div>
                     <div
                       className="col-6 mt-1"
+                      id="Home_woman2"
                       style={{ paddingLeft: 9, paddingRight: 0 }}
                     >
                       <img className="problem-img" src={woman2} alt="woman2" />
+                      <div className="ffamily" id="Home_hiddenWoman2-text">
+                        Липолитики
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div
                   className="col-md-6 mt-2 pt-1"
+                  id="Home_man"
                   style={{
                     paddingLeft: "14px",
                     paddingRight: 0,
@@ -187,6 +171,9 @@ export default class Home extends Component {
                     alt="man"
                     style={{ width: "calc(100%)", height: "calc(100% - 10px)" }}
                   />
+                  <div className="ffamily" id="Home_hidden-text">
+                    Мужская косметология
+                  </div>
                 </div>
               </div>
             </div>
@@ -355,25 +342,11 @@ export default class Home extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="col-12 mb-4 ps-4">
+                <div className="col-12 mb-5">
                   <a
                     href="/services"
-                    style={{
-                      backgroundColor: "#F8C77A",
-                      color: "#602B1D",
-                      padding: "1.5rem + 1.5rem",
-                      textDecoration: "none",
-                      display: "inline-block",
-                      borderRadius: "3px",
-                      border: "0.5px",
-                      borderStyle: "solid",
-                      borderColor: "#F8C77A",
-                      minHeight: "50px",
-                      height: "2.8vw",
-                      fontSize: "1.14em",
-                    }}
                     id="ahref"
-                    className="text-center d-flex align-items-center justify-content-center rounded"
+                    className="text-center d-flex align-items-center justify-content-center updateBGOsob"
                   >
                     {" "}
                     Читать подробнее{" "}
@@ -871,16 +844,21 @@ export default class Home extends Component {
                   <div className="row pe-2">
                     <div
                       className="col-md-6 pe-2"
+                      id="consult"
                       style={{ paddingLeft: 0, paddingRight: 0 }}
                     >
-                      <img
-                        className="problem-img"
-                        src={Consult}
-                        alt="Consult"
-                      />
+                      <a href="#yakorConsultation">
+                        <img
+                          className="problem-img"
+                          src={Consult}
+                          alt="Consult"
+                        />
+                      </a>
+                      <div id="consultText">Консультация</div>
                     </div>
                     <div
                       className="col-md-6"
+                      id="chistka"
                       style={{ paddingLeft: 0, paddingRight: 0 }}
                     >
                       <img
@@ -888,12 +866,15 @@ export default class Home extends Component {
                         src={Chistka}
                         alt="Chistka"
                       />
+                      <div id="chistkaText">Чистка</div>
                     </div>
                     <div
                       className="col-md-12"
+                      id="akne"
                       style={{ paddingLeft: 0, paddingRight: 0 }}
                     >
                       <img className="problem-img" src={Akne} alt="Akne" />
+                      <div id="akneText">Лечение акне</div>
                     </div>
                   </div>
                 </div>
@@ -901,31 +882,28 @@ export default class Home extends Component {
                   <div className="row">
                     <div
                       className="col-md-12 mb-1"
+                      id="piling"
                       style={{ paddingLeft: 0, paddingRight: 0 }}
                     >
                       <img className="problem-img" src={Piling} alt="Piling" />
+                      <div id="pilingText">Пилинг</div>
                     </div>
                     <div
                       className="col-md-12 mb-3"
                       style={{ paddingLeft: 0, paddingRight: 0 }}
                     >
-                      <svg viewBox="0 0 695 380">
+                      <svg id="otherProcedure" viewBox="0 0 695 380">
                         <rect
+                          id="otherProcedureRect"
                           x="0.5"
                           y="1.29297"
-                          width="690"
-                          height="377"
                           rx="11.5"
-                          stroke="#602B1D"
-                          strokeWidth="2px"
-                          stroke-dasharray="12 12"
-                          strokeDashoffset="1"
-                          fill="none"
                         ></rect>
                         <text x="10" y="370" fontSize={"1.7vw"}>
                           Другие процедуры
                         </text>
                       </svg>
+                      <div id="otherProceduresBG"></div>
                     </div>
                   </div>
                 </div>
@@ -1204,7 +1182,7 @@ export default class Home extends Component {
                   }}
                 ></line>
               </svg>
-              <div className="row mt-4 pb-3">
+              <div className="row mt-4 pb-3" id="yakorConsultation">
                 <div
                   className="col-md-5 mt-5 pt-3 ms-4"
                   style={{ paddingRight: 0 }}
@@ -1231,15 +1209,17 @@ export default class Home extends Component {
                     </h2>
                   </div>
                   <form>
-                    <div className="form-group my-4">
+                    <div
+                      id="Home_consult-container"
+                      className="form-group my-4"
+                    >
                       <input
-                        style={{ color: "#602B1D", fontSize: 1.4 + "vw" }}
                         type="text"
                         className="form-control-plaintext ps-2"
                         id="InputText"
                         placeholder="Ваше имя"
                       />
-                      <svg fill="none" viewBox="0 0 84 1">
+                      <svg id="consultSvg" fill="none" viewBox="0 0 84 1">
                         <line
                           x1={0}
                           x2={100}
@@ -1254,9 +1234,11 @@ export default class Home extends Component {
                         ></line>
                       </svg>
                     </div>
-                    <div className="form-group my-4">
+                    <div
+                      id="Home_consult-container"
+                      className="form-group my-4"
+                    >
                       <input
-                        style={{ color: "#602B1D", fontSize: 1.4 + "vw" }}
                         type="password"
                         className="form-control-plaintext ps-2"
                         id="InputPassword"
@@ -1277,9 +1259,11 @@ export default class Home extends Component {
                         ></line>
                       </svg>
                     </div>
-                    <div className="form-group my-4">
+                    <div
+                      id="Home_consult-container"
+                      className="form-group my-4"
+                    >
                       <input
-                        style={{ color: "#602B1D", fontSize: 1.4 + "vw" }}
                         type="email"
                         className="form-control-plaintext ps-2"
                         id="InputEmail1"
@@ -1301,27 +1285,55 @@ export default class Home extends Component {
                         ></line>
                       </svg>
                     </div>
-                    <select className="form-control-plaintext ps-2 mt-4 mb-2">
-                      <option
-                        style={{ color: "#602B1D", fontSize: 1.4 + "vw" }}
-                      >
-                        Выберите вариант
-                      </option>
-                    </select>
-                    <svg fill="none" viewBox="0 0 84 1">
-                      <line
-                        x1={0}
-                        x2={100}
-                        y1={0}
-                        y2={0}
-                        strokeDasharray={2.5}
-                        style={{
-                          stroke: "#602B1D",
-                          strokeWidth: 0.5 + "px",
-                          strokeDashoffset: "1.5",
-                        }}
-                      ></line>
-                    </svg>
+                    <div
+                      id="Home_consult-container"
+                      className="form-group my-4"
+                    >
+                      <details id="Home_listServices">
+                        <summary id="Home_listTitle">
+                          <div>Выберите вариант</div>
+                        </summary>
+                        <div id="Home_all-services">
+                          <option>
+                            Инъекционная косметология
+                          </option>
+                          <p>
+                            Аппаратная косметология
+                          </p>
+                          <p>
+                            Эстетическая косметология
+                          </p>
+                          <p>
+                            Мужская косметология
+                          </p>
+                          <p>
+                            У меня другой вопрос{" "}
+                          </p>
+                        </div>
+                      </details>
+
+                      <datalist id="listServices">
+                        <option value="San Francisco"></option>
+                        <option value="New York"></option>
+                        <option value="Seattle"></option>
+                        <option value="Los Angeles"></option>
+                        <option value="Chicago"></option>
+                      </datalist>
+                      <svg id="Home_svg-select" fill="none" viewBox="0 0 84 1">
+                        <line
+                          x1={0}
+                          x2={100}
+                          y1={0}
+                          y2={0}
+                          strokeDasharray={2.5}
+                          style={{
+                            stroke: "#602B1D",
+                            strokeWidth: 0.5 + "px",
+                            strokeDashoffset: "1.5",
+                          }}
+                        ></line>
+                      </svg>
+                    </div>
                   </form>
                   <div className="mt-2 mb-5">
                     <span

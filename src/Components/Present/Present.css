@@ -67,13 +67,11 @@
 
 @keyframes present {
   0% {
-    margin-left: 50vw;
+    opacity: 0;
   }
   100% {
-    margin-left: 0vw;
+    opacity: 1;
   }
-
-  
 }
 
 @media (max-width: 780px) {
@@ -91,7 +89,7 @@
 
   .presentmob {
     width: 100%;
-    height: 100%;
+    height: 77.7vw;
   }
 
   .Presentmob_content {
@@ -103,19 +101,19 @@
     height: 77.7vw;
     visibility: visible;
     animation: presentmob 2s ease-out;
-    padding-top: 0.2vw;
-    height: 68.2vw;
+    padding-top: 1.5vw;
+    height: 77.7vw;
   }
 
   .Mobblock1 {
-    margin-bottom: 4.4vw;
+    margin-bottom: 3.4vw;
     padding: 0 4.4vw;
   }
 
   .Mobblock1 > h2 {
     font-size: 6.6vw;
-    margin-top: 6.6vw;
-    margin-bottom: 5.5vw;
+    margin-top: 3vw;
+    margin-bottom: 1vw;
   }
 
   .Mobblock1 > div {
