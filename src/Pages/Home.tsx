@@ -11,11 +11,6 @@ import Consult from "../Assets/ForHome/Desctop/consult.png";
 import Chistka from "../Assets/ForHome/Desctop/chistka.png";
 import Akne from "../Assets/ForHome/Desctop/akne.png";
 import Piling from "../Assets/ForHome/Desctop/piling.png";
-import Ex1 from "../Assets/ForHome/Desctop/Ex1.png";
-import left from "../Assets/ForHome/Desctop/left.png";
-import right from "../Assets/ForHome/Desctop/right.png";
-import Kovleft from "../Assets/ForHome/Desctop/Kovleft.png";
-import Kovright from "../Assets/ForHome/Desctop/Kovright.png";
 import AlinaZapic from "../Assets/ForHome/Desctop/AlinaZapic.png";
 import footerVK from "../Assets/ForFooter/Desctop/footerVK.png";
 import footerTG from "../Assets/ForFooter/Desctop/footerTG.png";
@@ -47,6 +42,7 @@ import RECEPTION_MODAL_MOBILE from "../Components/Reception_Modal/Reception_Moda
 
 import { YMaps, Map } from "@pbe/react-yandex-maps";
 import Present from "../Components/Present/Present";
+import Carousel from "../Components/Reviews_Carousel/Reviews_Carousel";
 /* import Calendar from "../Components/Calendar/Calendar"; */
 
 const HomeMap = () => (
@@ -62,6 +58,15 @@ const HomeMap = () => (
 /* yandex-map-api end */
 
 export default class Home extends Component {
+  items = [
+    { body: "Review 1", from: "Марина", src: "", date: "01.01.2024" },
+    { body: "Review 2", from: "Катя", src: "", date: "01.02.2024" },
+    { body: "Review 3", from: "Иван", src: "", date: "01.03.2024" },
+    { body: "Review 4", from: "Соня", src: "", date: "01.04.2024" },
+    { body: "Review 5", from: "Цып-цып", src: "", date: "01.05.2024" },
+    { body: "Review 6", from: "Царевна", src: "", date: "01.06.2024" },
+    { body: "Review 7", from: "Лягушка", src: "", date: "01.07.2024" },
+  ];
   render() {
     return (
       <div>
@@ -981,172 +986,7 @@ export default class Home extends Component {
         {/* Пятый контейнер */}
         <Present />
         {/* Шестой контейнер */}
-        <div className="container-fluid mt-5">
-          <div className="row">
-            <div className="col-md-12 justify-content-md-center p-0">
-              <div style={{ marginBottom: "4%" }}>
-                <h1
-                  className="col-md-11 text-center ffamily"
-                  id="Homerev_title"
-                >
-                  Отзывы от моих пациенток
-                </h1>
-              </div>
-              <div
-                id="carouselReviewsofHome"
-                className="carousel slide carousel-fade"
-                data-bs-ride="carousel"
-              >
-                <img src={Kovleft} alt="Kovleft" className="Homerev_kovleft" />
-                <img
-                  src={Kovright}
-                  alt="Kovright"
-                  className="Homerev_kovright"
-                />
-                <div className="carousel-inner">
-                  <div className="carousel-item active" id="Homerev_cont">
-                    <div className="col-md-2" id="Homerev_border-left"></div>
-                    <div className="col-md-10" id="Homerev_border">
-                      <div id="Homerev_text">
-                        Это был мой первый опыт косметических процедур, и я
-                        полностью довольна результатами. Это был мой первый опыт
-                        косметических процедур, и я полностью довольна
-                        результатами. Это был мой первый опыт косметических
-                        процедур, и я полностью довольна результатами.
-                      </div>
-                      <div id="Homerev_img-border">
-                        <svg id="Homerev_svg">
-                          <rect
-                            id="Homerev_rect"
-                            x="0.5"
-                            y="1.29297"
-                            rx="11.5"
-                          />
-                          <foreignObject x="0" y="0" id="Homerev_foreignObject">
-                            <div id="Homerev_reviews">
-                              <div className="col-6" id="Homerev_img">
-                                <img
-                                  src={Ex1}
-                                  className="img-fluid"
-                                  alt="ex1"
-                                />
-                              </div>
-                              <div className="col-6" id="Homerev_nd">
-                                <div id="Homerev_name">Лиза Семакина</div>
-                                <div id="Homerev_date">27.12.2024</div>
-                              </div>
-                            </div>
-                          </foreignObject>
-                        </svg>
-                      </div>
-                    </div>
-                    <div className="col-md-2" id="Homerev_border-right"></div>
-                  </div>
-                  <div className="carousel-item" id="Homerev_cont">
-                    <div className="col-md-2" id="Homerev_border-left"></div>
-                    <div className="col-md-10" id="Homerev_border">
-                      <div id="Homerev_text">
-                        Это был мой первый опыт косметических процедур, и я
-                        полностью довольна результатами. Это был мой первый опыт
-                        косметических процедур, и я полностью довольна
-                        результатами.
-                      </div>
-                      <div id="Homerev_img-border">
-                        <svg id="Homerev_svg">
-                          <rect
-                            id="Homerev_rect"
-                            x="0.5"
-                            y="1.29297"
-                            rx="11.5"
-                          />
-                          <foreignObject x="0" y="0" id="Homerev_foreignObject">
-                            <div id="Homerev_reviews">
-                              <div className="col-6" id="Homerev_img">
-                                <img
-                                  src={Ex1}
-                                  className="img-fluid"
-                                  alt="ex1"
-                                />
-                              </div>
-                              <div className="col-6" id="Homerev_nd">
-                                <div id="Homerev_name">Лиза Семакина</div>
-                                <div id="Homerev_date">27.12.2024</div>
-                              </div>
-                            </div>
-                          </foreignObject>
-                        </svg>
-                      </div>
-                    </div>
-                    <div className="col-md-2" id="Homerev_border-right"></div>
-                  </div>
-                  <div className="carousel-item" id="Homerev_cont">
-                    <div className="col-md-2" id="Homerev_border-left"></div>
-                    <div className="col-md-10" id="Homerev_border">
-                      <div id="Homerev_text">
-                        Это был мой первый опыт косметических процедур, и я
-                        полностью довольна результатами.
-                      </div>
-                      <div id="Homerev_img-border">
-                        <svg id="Homerev_svg">
-                          <rect
-                            id="Homerev_rect"
-                            x="0.5"
-                            y="1.29297"
-                            rx="11.5"
-                          />
-                          <foreignObject x="0" y="0" id="Homerev_foreignObject">
-                            <div id="Homerev_reviews">
-                              <div className="col-6" id="Homerev_img">
-                                <img
-                                  src={Ex1}
-                                  className="img-fluid"
-                                  alt="ex1"
-                                />
-                              </div>
-                              <div className="col-6" id="Homerev_nd">
-                                <div id="Homerev_name">Лиза Семакина</div>
-                                <div id="Homerev_date">27.12.2024</div>
-                              </div>
-                            </div>
-                          </foreignObject>
-                        </svg>
-                      </div>
-                    </div>
-                    <div className="col-md-2" id="Homerev_border-right"></div>
-                  </div>
-                </div>
-                <a
-                  className="carousel-control-prev"
-                  role="button"
-                  href="#carouselReviewsofHome"
-                  data-bs-slide="prev"
-                  id="Homerev_left"
-                >
-                  <img
-                    className="carousel-control"
-                    aria-hidden="true"
-                    src={left}
-                    alt="left"
-                  />
-                </a>
-                <a
-                  className="carousel-control-next"
-                  role="button"
-                  href="#carouselReviewsofHome"
-                  data-bs-slide="next"
-                  id="Homerev_right"
-                >
-                  <img
-                    className="carousel-control"
-                    aria-hidden="true"
-                    src={right}
-                    alt="right"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Carousel items={this.items} />
         {/* Седьмой контейнер */}
         {/* Calendar */}
         {/* <div className="calendar-rectangle">
@@ -1294,21 +1134,11 @@ export default class Home extends Component {
                           <div>Выберите вариант</div>
                         </summary>
                         <div id="Home_all-services">
-                          <option>
-                            Инъекционная косметология
-                          </option>
-                          <p>
-                            Аппаратная косметология
-                          </p>
-                          <p>
-                            Эстетическая косметология
-                          </p>
-                          <p>
-                            Мужская косметология
-                          </p>
-                          <p>
-                            У меня другой вопрос{" "}
-                          </p>
+                          <option>Инъекционная косметология</option>
+                          <p>Аппаратная косметология</p>
+                          <p>Эстетическая косметология</p>
+                          <p>Мужская косметология</p>
+                          <p>У меня другой вопрос </p>
                         </div>
                       </details>
 
