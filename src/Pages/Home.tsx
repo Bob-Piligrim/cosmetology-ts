@@ -43,7 +43,6 @@ import RECEPTION_MODAL_MOBILE from "../Components/Reception_Modal/Reception_Moda
 import { YMaps, Map } from "@pbe/react-yandex-maps";
 import Present from "../Components/Present/Present";
 import Carousel from "../Components/Reviews_Carousel/Reviews_Carousel";
-/* import Calendar from "../Components/Calendar/Calendar"; */
 
 const HomeMap = () => (
   <YMaps>
@@ -58,15 +57,6 @@ const HomeMap = () => (
 /* yandex-map-api end */
 
 export default class Home extends Component {
-  items = [
-    { body: "Review 1", from: "Марина", src: "", date: "01.01.2024" },
-    { body: "Review 2", from: "Катя", src: "", date: "01.02.2024" },
-    { body: "Review 3", from: "Иван", src: "", date: "01.03.2024" },
-    { body: "Review 4", from: "Соня", src: "", date: "01.04.2024" },
-    { body: "Review 5", from: "Цып-цып", src: "", date: "01.05.2024" },
-    { body: "Review 6", from: "Царевна", src: "", date: "01.06.2024" },
-    { body: "Review 7", from: "Лягушка", src: "", date: "01.07.2024" },
-  ];
   render() {
     return (
       <div>
@@ -985,8 +975,14 @@ export default class Home extends Component {
         </div>
         {/* Пятый контейнер */}
         <Present />
+
         {/* Шестой контейнер */}
-        <Carousel items={this.items} />
+
+        <div className="rev_container">
+          <h1 className="rev_title">Отзывы от пациенток</h1>
+          <Carousel />
+        </div>
+
         {/* Седьмой контейнер */}
         {/* Calendar */}
         {/* <div className="calendar-rectangle">

@@ -725,6 +725,21 @@ html {
   }
 }
 
+/* Raviews-Carousel */
+
+.rev_container {
+  margin-top: 2vw;
+}
+
+.rev_title {
+  margin: 0 0 2vw 0;
+  text-align: center;
+  color: #602b1d;
+  font-family: Cormorant SC;
+}
+
+/* Raviews-Carousel END */
+
 /* Consultation */
 
 #Home_consult-container input {
@@ -801,12 +816,13 @@ datalist option {
   padding: 0;
 }
 
-#Home_all-services > option, p {
+#Home_all-services > option,
+p {
   font-size: 1.3rem;
   line-height: 1;
   padding: 1%;
-  background-color: #F8C77A;
-  border: 0.5px solid #F8C77A;
+  background-color: #f8c77a;
+  border: 0.5px solid #f8c77a;
   border-radius: 13px;
   padding: 1vw;
 }

@@ -9,14 +9,6 @@
   overflow: hidden;
 }
 
-.rev_title {
-  margin: 0 0 2vw 0;
-  text-align: center;
-  padding: 2vw 0 0 0;
-  color: #602b1d;
-  font-family: Cormorant SC;
-}
-
 .rev_content {
   display: flex;
   width: 100%;
@@ -42,7 +34,7 @@
   width: 36vw;
   font-size: 1.3vw;
   color: #fff4e3;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
   text-wrap: wrap;
 }
 
@@ -53,12 +45,12 @@
 
 .rev_img-border {
   width: clamp(285px, 23vw, 365px);
-  height: clamp(90px, 7em, 105px);
+  height: clamp(97px, 9em, 115px);
 }
 
 .rev_svg {
   width: clamp(280px, 22vw, 360px);
-  height: clamp(85px, 7em, 100px);
+  height: clamp(85px, 9em, 100px);
 }
 
 .rev_rect {
@@ -122,19 +114,19 @@ border-radius: 13px;
   display: flex;
   column-gap: 10px;
   position: absolute;
-  bottom: 1;
+  bottom: -1%;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.rev_slider__dot {
+.rev_slider-dot {
   width: clamp(10px, 1.3em, 19px);
   height: clamp(10px, 1.3em, 19px);
   background-color: #f8c77a;
   border-radius: 50%;
 }
 
-.rev_slider__dot:hover {
+.rev_slider-dot:hover {
   background-color: #2b8069;
 }
 
@@ -239,14 +231,14 @@ border-radius: 13px;
     display: flex;
     column-gap: 4px;
     position: absolute;
-    bottom: -4%;
+    bottom: -3%;
     left: 50%;
     transform: translateX(-50%);
   }
 
-  .rev_slider__dot {
-    width: 8px;
-    height: 8px;
+  .rev_slider-dot {
+    width: 10px;
+    height: 10px;
     background-color: #f8c77a;
     border-radius: 50%;
   }
@@ -263,7 +255,7 @@ border-radius: 13px;
     display: flex;
     column-gap: 4px;
     position: absolute;
-    bottom: -4%;
+    bottom: -2%;
     left: 50%;
     transform: translateX(-50%);
   }
